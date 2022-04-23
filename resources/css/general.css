@@ -1,0 +1,17 @@
+*, *:before, *:after {
+	transition: .5s ease-in-out;
+}
+
+h1, h2, h3, h4, h5, h6{
+	text-align: center;
+}
+
+body {
+	background-color: var(--light);
+	color: var(--black);
+}
+
+a:active, a:hover, a {
+	text-decoration: none;
+  color: var(--black);
+}

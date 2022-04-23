@@ -1,0 +1,26 @@
+*, *:before, *:after {
+	transition: .5s ease-in-out;
+}
+
+h1, h2, h3, h4, h5, h6{
+	text-align: center;
+}
+
+body {
+	background-color: var(--light);
+	color: var(--black);
+}
+
+a:active, a:hover, a {
+	text-decoration: none;
+  color: var(--black);
+}
+:root {
+	--white: #FFFFFF;
+	--light: #F6F6F6;
+	--gray: #363636;
+	--black: #404040;
+	--red: #CC3716;
+	--lightgray: #D3D3D3;
+}
+
