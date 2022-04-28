@@ -15,10 +15,10 @@ return new class extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->id('ID');
+            $table->string('Name', 100);
             $table->foreignId('CategoryID')->constrained('categories')->onUpdate('cascade')->onDelete('cascade');
             $table->text('FullDescription');
             $table->string('ShortDescription', '150');
-            $table->string('Name', 100);
             $table->float('Price');
         });
     }

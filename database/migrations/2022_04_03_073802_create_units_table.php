@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('units', function (Blueprint $table) {
             $table->id('ID');
             $table->string('Name', 100);
+            $table->string('ShortName', 50);
         });
     }
 

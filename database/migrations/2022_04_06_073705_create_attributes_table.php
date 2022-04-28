@@ -15,9 +15,9 @@ return new class extends Migration
     {
         Schema::create('attributes', function (Blueprint $table) {
             $table->id('ID');
+            $table->string('Name', 100);
             $table->foreignId('CategoryID')->constrained('categories')->onUpdate('cascade')->onDelete('cascade');
             $table->foreignId('UnitID')->constrained('units')->onUpdate('cascade')->onDelete('cascade');
-            $table->string('Name', 100);
         });
     }
 
